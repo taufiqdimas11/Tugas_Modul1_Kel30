@@ -1,4 +1,4 @@
-const jurusan =["teknik", "ekonomi", "budaya", "politik","hukum","kedokteran"];
+const fakultas =["teknik", "ekonomi", "budaya", "politik","hukum","kedokteran"];
 const fungsiAsyncAwait = async () => {
     await mainFunction();
     await keterangan();
@@ -8,11 +8,11 @@ const keterangan=()=>{
 }
 const mainFunction= () => {
     var valueNama = document.getElementById("nama").value; 
-    var valueJurusan = document.getElementById("jurusan").value;
-    (jurusan.indexOf(valueJurusan) > -1)?console.log(valueNama+" terdaftar pada jurusan "+valueJurusan+", silahkan hubungi fakultas terkait"):console.log(valueNama+" tidak terdaftar pada jurusan di kampus ini");
+    var valueFakultas = document.getElementById("fakultas").value;
+    (fakultas.indexOf(valueFakultas) > -1)?console.log(valueNama+" terdaftar pada fakultas "+valueFakultas+", silahkan hubungi fakultas terkait"):console.log(valueNama+" tidak terdaftar pada fakultas di kampus ini");
   }
 
   function eraseText() {
     document.getElementById("nama").value = "";
-    document.getElementById("jurusan").value = "";
+    document.getElementById("fakultas").value = "";
    }
